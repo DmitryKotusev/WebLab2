@@ -1,5 +1,8 @@
 package com.company;
 
+/**
+ * Класс тариф "Игровой"
+ */
 public class GameTariff extends InternetIncludedTariff {
     private static GameTariff gameTariff;
 

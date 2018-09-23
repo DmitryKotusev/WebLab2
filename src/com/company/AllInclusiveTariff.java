@@ -1,12 +1,15 @@
 package com.company;
 
+/**
+ * Класс тариф "Всё включено"
+ */
 public class AllInclusiveTariff extends InternetIncludedTariff {
     private static AllInclusiveTariff allInclusiveTariff;
 
     private AllInclusiveTariff() {
         outGoingOutside = 1200;
         outGoingInside = 200;
-        amountOfUsers = 0;
+        amountOfUsers = 8;
         pricePerMonth = 35;
         exceedPenaltyOutside = 0.05;
         exceedPenaltyInside = 0.1;

@@ -1,5 +1,8 @@
 package com.company;
 
+/**
+ * Класс тариф "Пенсионный"
+ */
 public class GrandParentTariff extends Tariff {
     private static GrandParentTariff grandParentTariff;
 

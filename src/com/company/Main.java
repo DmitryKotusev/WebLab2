@@ -3,8 +3,15 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * Главный класс, содержащий метод main
+ */
 public class Main {
 
+    /**
+     * Метод, с которого начинается выполнение программы
+     * @param args
+     */
     public static void main(String[] args) {
         ArrayList<Tariff> list = new ArrayList<Tariff>();
 
@@ -48,5 +55,13 @@ public class Main {
             System.out.print(t.getAmountOfUsers() + ": ");
             System.out.println(t);
         }
+
+        System.out.println();
+        System.out.println("Первый тарифф в списке, чьё количество пользователей лежит в диапозоне от 5 до 10");
+        System.out.println(TariffRanger.getByAmountOfUsers(list, 5, 10));
+
+        System.out.println();
+        System.out.println("Первый тарифф в списке, чья цена в месяц лежит в диапозоне от 15 до 20");
+        System.out.println(TariffRanger.getByPricePerMonth(list, 15, 20));
     }
 }

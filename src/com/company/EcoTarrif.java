@@ -1,5 +1,8 @@
 package com.company;
 
+/**
+ * Класс тариф "Эконом"
+ */
 public class EcoTarrif extends Tariff {
     private static EcoTarrif ecoTariff;
 
